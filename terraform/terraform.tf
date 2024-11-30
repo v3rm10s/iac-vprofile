@@ -27,13 +27,10 @@ terraform {
   }
 
   backend "s3" {
-    bucket = "gitopsterrastate"
+    bucket = "virtuaactions"
     key    = "terraform.tfstate"
-    region = "us-east-2"
+    region = "us-east-1"
   }
-
-  required_version = "~> 1.6.3"
+  #commented so that workflow will run on github
+  #required_version = "~> 1.6.3"
 }
-##
-##
-##
